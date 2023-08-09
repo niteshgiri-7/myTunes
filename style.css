@@ -1,0 +1,209 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/* creating varibales */
+:root {
+    --p500 : #281154;
+    --p300 : #270082;
+    --p600 : #dc0000;
+    --body : #f9f6ff;
+    --max-width: 1200px;
+}
+body{
+    font-family: "Roborto" , sans-serif;
+    line-height: 1.4;
+    font-weight: 300;
+}
+
+ul,a{
+    list-style: none;
+    text-decoration: none;
+    color:white;
+}
+.navcontainer{
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+header{
+    background-color: var(--p300);
+    position: sticky;
+    top:0;
+    z-index:2;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 1);
+}
+.logo{
+    font-size: 40px;
+    font-weight: 550;
+}
+nav {
+    display:flex;
+    justify-content: space-between;
+    color:white;
+}
+nav ul{
+    display:flex;
+    gap:20px;
+    align-items: center;
+    padding:20px 0;
+}
+nav ul li:hover{
+    border:0px solid transparent;
+    background-color: white;
+    color:black;
+    border-radius: 5px;
+    transition: 0.4s ease-in;
+}
+/* navbar styling finished */
+
+/* start of main section styling */
+section{
+    scroll-margin: 60px;
+}
+.herosection{
+    display:grid;
+    place-items: center;
+    background-image: url("hero.png");
+    background-size: cover;
+    height:100vh;
+    color:white;
+    text-align: center;
+}
+.herosection .container{
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+}
+.herosection h1{
+    font-size: 90px;
+}
+.herosection h3{
+    font-size: 35px;
+}
+.herosection p{
+    font-size: 25px;
+}
+
+.musicsection{
+    padding-top: 50px;
+    background-color: var(--p500)
+   
+}
+.musicsection .container{
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+
+.deviceimg img{
+    width:595px;
+    height:393px;
+    z-index: -3;
+    border:5px solid var(--p500);
+    border-radius: 10px;
+}
+.deviceimg{
+  position:relative;
+  top:200px;
+  margin-top: -200px;
+  
+}
+button{
+    padding:10px 15px;
+    border:none;
+    transition:0.2s ease-in-out;
+    border-radius: 3px;
+}
+button:hover{
+    opacity:0.7;
+}
+.btn{
+    background-color: var(--p600);
+    color:white;
+}
+.btn2{
+    background-color: var(--p300);
+    color:white;
+}
+.aboutMusic{
+    padding-top: 300px;
+    display:grid;
+    place-items: center;
+    text-align: center;
+    gap:50px;
+    margin-bottom: 50px;
+}
+/* .giftcard{
+    display:grid;
+    place-items: center;
+    text-align: center;
+    height: 500px;
+}
+.giftcontainer{
+    display:flex;
+} */
+.giftsection{
+    display:flex;
+    justify-content: center;
+    margin:50px 50px;
+   
+    gap:50px;
+}
+/* .gift_content{
+    display: grid;
+    place-items: center;
+    gap:20px;
+} */
+/* #reedem{
+    margin-bottom: 50px;
+} */
+.gift_content{
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+}
+.gift_content p{
+    margin-top: 20px;
+    gap:5px;
+}
+
+.upperfooter{
+    background-color: var(--p300);
+}
+.footerContainer{
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    margin: 0 150px 0 150px;
+}
+.footerlinks{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+ol{
+    list-style-type: none;
+}
+ .footerlinks h4 , .musicsection h4{
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
+  margin-bottom: 10px;
+  /* text-align: center; */
+}
+#store{
+    width: 60px;
+    text-align: none;
+}
+.lowerfooter{
+    background-color: var(--p500);
+    color:white;
+    text-align: center;
+    padding:20px;
+}
